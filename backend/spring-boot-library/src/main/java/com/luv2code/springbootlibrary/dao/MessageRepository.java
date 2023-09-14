@@ -10,4 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Long> {
     Page<Message> findByUserEmail(@RequestParam("user_email") String userEmail, Pageable pageable);
+
+    // This will find all the Messages from all users
+    Page<Message> findByClosed(@RequestParam("closed") boolean closed, Pageable pageable);
+
+
 }
