@@ -5,7 +5,7 @@ import com.luv2code.springbootlibrary.service.ReviewService;
 import com.luv2code.springbootlibrary.utils.ExtractJWT;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin("http://localhost:3000") // It will allow to communicate from our React app
+@CrossOrigin("https://localhost:3000") // It will allow to communicate from our React app
 @RestController
 @RequestMapping("/api/reviews")
 public class ReviewController {
